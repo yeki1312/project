@@ -7,9 +7,14 @@ class Program
         Console.Write("لطفا یک عدد وارد کنید: ");
         int num = int.Parse(Console.ReadLine());
 
-        if (num < 10 && num % 2 == 0)
+        if (num % 7 == 0)
         {
-            Console.WriteLine("true");
+            Console.WriteLine("Yes!");
+        }
+        else
+        {
+            int result = num * 3;
+            Console.WriteLine("Result: " + result);
         }
     }
 }
